@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cryptopals Challenge Solutions w/Explanation
 
-## Available Scripts
+## Motivation:
+The purpose of this is to provide an interactive solution alongside a blog like explanation of how I arrived at each solution for the [Cryptopals](https://cryptopals.com/) challenges. 
 
-In the project directory, you can run:
+The Cryptopals Challenges were built in 2013 by:
+* Thomas Ptacek (@tqbf)
+* Sean Devlin (@spdevlin)
+* Alex Balducci (@iamalexalright)
+* Marcin Wielgoszewski (@marcinw)
 
-### `npm start`
+The background/purpose can be seen at the [Cryptopals Homepage FAQ section](https://cryptopals.com/) as well as [Maciej Ceglowski introductory write-up](https://blog.pinboard.in/2013/04/the_matasano_crypto_challenges/).  
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Interested in why I'm doing yet-another-blog-covering-blog...I was given something beyond the scope of this...a task to show cloud-portability of applications across leading IaaS's (AWS, GCP, Azure, on-prem vSphere)...in my head I know how simple this is, and when using Heroku inspired [buildpacks](https://buildpacks.io/) it feels like cheating.
 
-### `npm test`
+Buildpacks having been built by Heroku in 2011 for building [polyglot application platforms](https://blog.heroku.com/polyglot_platform), it was a ground-breaking step in letting application developers move their workloads around in the most portable way.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Your middleware is now abstracted from your application to the container it is running on.  This container can be fully managed leaving you to focus on application features using something like [Cloud Foundry's Diego Container Orchestrator]() (Considered a [PaaS]()) or you can take over finer grained controls in the process using something like [Googles Kubernetes]() (Considered a [CaaS]()).
 
-### `npm run build`
+</Rant>
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+All this explanation so that I can explain the kicker. This is one of those unique moments where the stars align and passion-project meets business value and showing cloud portability.  
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+What we will end up having is an interactive user-interface to test our Cryptopals solutions, a small write-up explaining each set solution, a backend driving the logic of the solution written in a few popular languages, and each engine running in AWS, Azure, GCP, and vSphere. I will provide some logic in the UI enabling backend selection for calls to be made to the chosen IaaS based Engine.
