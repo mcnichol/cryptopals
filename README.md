@@ -20,6 +20,6 @@ The middleware is abstracted from your application to the container it is runnin
 
 **</Rant>**
 
-All this explanation so that I can explain the kicker. This is one of those unique moments where the stars align and passion-project meets business value and showing cloud portability.  
+All this explanation so that I can explain the kicker. This is one of those unique moments where the stars align and passion-project meets business value. I love crypto, security, pentesting...not only do I love it, I'm pretty good at it. A few years back I placed in one of the SANS Cyber Aces competitions (Had I known hacking was allowed I too would have been tied for first with a .01 second completion...playing fair to a fault ¯\\\_(ツ)\_/¯ ).
 
 What we will end up having is an interactive user-interface to test our Cryptopals solutions, a small write-up explaining each set solution, a backend driving the logic of the solution written in a few popular languages, and each engine running in AWS, Azure, GCP, and vSphere. I will provide some logic in the UI enabling backend selection for calls to be made to the chosen IaaS based Engine.
