@@ -1,0 +1,13 @@
+table {
+  border: 1px solid #000;
+  font-family: "Courier New";
+  border-collapse:collapse;
+}
+
+td, th{
+  padding: 0 10px 0 10px;
+  text-align: right;
+  vertical-align: top;
+  border: 1px solid #000;
+}
+

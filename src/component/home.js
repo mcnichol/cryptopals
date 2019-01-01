@@ -5,7 +5,7 @@ class Home extends Component {
   render(){
     return (
       <div>
-        <h2>Challenge Set 1</h2>
+        <h2>Challenge Set 1: The Basics</h2>
         <ol>
           <li><Link to="/s1c1">Convert Hex to Base64</Link></li>
           <li><Link to="/s1c2">Fixed XOR</Link></li>
