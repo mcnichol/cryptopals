@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Collapsible from './collapsible';
 import S1C1Note1 from './s1c1-note1';
 import S1C1Note2 from './s1c1-note2';
 
