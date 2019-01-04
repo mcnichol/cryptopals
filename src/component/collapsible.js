@@ -26,8 +26,8 @@ class Collapsible extends Component {
 
     return (
       <div>
-        <div className="panel" onClick={(e)=>this.handleToggle(e)}>
-          <div className="panel-heading">
+        <div className="panel" >
+          <div className="panel-heading" onClick={(e)=>this.handleToggle(e)}>
             <h3 id={linkId}>{title}</h3>
           </div>
         </div>
