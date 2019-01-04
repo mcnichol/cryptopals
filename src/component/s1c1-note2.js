@@ -13,7 +13,7 @@ class S1C1Note2 extends Component {
 
           <p>So why bother with HEX -> ASCII conversion when we really only care about getting to base64?</p>
 
-          <p>ASCII is another character encoding standard used when passing data around that can be viewed in a human readable form. Instead of bouncing around in different encodings exercising our logic and math, we can see how this carries information in a form we can care about. In this way the WHY can be immediately apparent letting us move onto the HOW which has a myriad of options and clever techniques for us to stumble around with (one of which you will see in just a moment!)</p>
+          <p><b>ANSWER:</b> ASCII is another character encoding standard used when passing data around that can be viewed in a human readable form. Instead of bouncing around in different encodings exercising our logic and math abilities, we can instead see how this carries information in the human readable form we can get value out of. In this way the WHY can be immediately apparent letting us move onto the HOW which has a myriad of options and clever techniques for us to stumble around with (one of which you will see in the next section!)</p>
 
           <p>ASCII is 7 bits (binary digits) in length meaning it can represent 128 (2^7) characters. A single byte having 8 bits means ASCII affords us the opportunity for a parity bit but we won't get that detailed in this explanation. What it ultimately provides is the textual representation of this hashed message (if there is one) that is human readable and shows how we can leverage encodings as carriers of information.  We can see this by breaking down the hex string into smaller components in relation to how it is evaluated in ASCII. Remember the table displaying the various bases (2, 10, 16, 64) in the previous section. These all have a relationship to ASCII and can be easily seen in this <a href="http://www.asciitable.com/" target="_blank" rel="noreferrer noopener">ASCII Table</a>.</p>
 
@@ -25,7 +25,7 @@ class S1C1Note2 extends Component {
 
           <p>We now have 16 unique configurations which require the use of 4 bits. We can now represent the <i>decimal value</i> 0-15 or more appropriately <i>hex value</i> 0-f. As a paper and pencil exercise let's write these values out.</p>
 
-          <h4>0x04 is equivalent to binary: <code>0100</code></h4>
+          <h4>0x04 is equivalent to binary: <code>0b0100</code></h4>
           <table className="binary-view">
             <tbody>
               <tr><td>8</td><td>4</td><td>2</td><td>1</td></tr>
@@ -35,7 +35,7 @@ class S1C1Note2 extends Component {
 
           <code>(0*8) + (1*4) + (0*2) + (0*1) = 4</code>
 
-          <h4>0x09 is equivalent to binary: <code>1001</code></h4>
+          <h4>0x09 is equivalent to binary: <code>0b1001</code></h4>
           <table className="binary-view">
             <tbody>
               <tr><td>8</td><td>4</td><td>2</td><td>1</td></tr>
@@ -47,7 +47,7 @@ class S1C1Note2 extends Component {
 
           <p>Putting these together we conveniently connect them alongside one-another.</p>
 
-          <h4>0x49 is equivalent to binary <code>01001001</code></h4>
+          <h4>0x49 is equivalent to binary <code>0b01001001</code></h4>
           <table className="binary-view">
             <tbody>
               <tr><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td></tr>
