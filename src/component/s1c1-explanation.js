@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import S1C1Note1 from './s1c1-note1';
 import S1C1Note2 from './s1c1-note2';
+import S1C1Note3 from './s1c1-note3';
+import S1C1Note4 from './s1c1-note4';
 
 class S1C1Explanation extends Component {
   render(){
@@ -19,6 +21,8 @@ class S1C1Explanation extends Component {
         </ol>
         <S1C1Note1 />
         <S1C1Note2 />
+        <S1C1Note3 />
+        <S1C1Note4 />
       </div>
     );
   }
