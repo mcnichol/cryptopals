@@ -27,16 +27,20 @@ class S1C1Note2 extends Component {
 
           <h4>0x04 is equivalent to binary: <code>0100</code></h4>
           <table className="binary-view">
-            <tr><td>8</td><td>4</td><td>2</td><td>1</td></tr>
-            <tr><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            <tbody>
+              <tr><td>8</td><td>4</td><td>2</td><td>1</td></tr>
+              <tr><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+            </tbody>
           </table>
 
           <code>(0*8) + (1*4) + (0*2) + (0*1) = 4</code>
 
           <h4>0x09 is equivalent to binary: <code>1001</code></h4>
           <table className="binary-view">
-            <tr><td>8</td><td>4</td><td>2</td><td>1</td></tr>
-            <tr><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tbody>
+              <tr><td>8</td><td>4</td><td>2</td><td>1</td></tr>
+              <tr><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            </tbody>
           </table>
 
           <code>(1*8) + (0*4) + (0*2) + (1*1) = 9</code>
@@ -45,8 +49,10 @@ class S1C1Note2 extends Component {
 
           <h4>0x49 is equivalent to binary <code>01001001</code></h4>
           <table className="binary-view">
-            <tr><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td></tr>
-            <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            <tbody>
+              <tr><td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td></tr>
+              <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+            </tbody>
           </table>
 
           <code>(0*128) + (1*64) + (0*32) + (0*16) + (1*8) + (0*4) + (0*2) + (1*1) = 73</code>
