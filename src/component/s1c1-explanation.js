@@ -14,10 +14,10 @@ class S1C1Explanation extends Component {
         </p>
         <p>A few things to note:</p>
         <ol>
-          <li><a href="#note1">Hex is base 16, base64 aptly named is base 64</a></li>
+          <li><a href="#note1">Hexadecimal==base 16, base64==base 64</a></li>
           <li><a href="#note2">Hex encoded ASCII values utilize one octet for each ASCII character</a></li>
-          <li><a href="#note3">Each Hex value is a nibble whereas base64 operates in sextets. This means 3 Hex values (3x4=12 bits) can be expressed with two sextets (2x6=12 bits)</a></li>
-          <li><a href="#note4">A more human readable form would be ASCII and an easy solvable view would be binary, but neither are required intermediaries in order to convert directly from Hex to base64</a></li>
+          <li><a href="#note3">Hex is nibbles; base64 is sextets</a></li>
+          <li><a href="#note4">Converting from Hex to base64 doesn't require intermediary encodings</a></li>
         </ol>
         <S1C1Note1 />
         <S1C1Note2 />
