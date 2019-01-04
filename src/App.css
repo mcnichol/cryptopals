@@ -1,5 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.25em;
+}
+
+.challenges {
   padding: .5em 5em .5em 6em;
 }
+

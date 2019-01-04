@@ -8,7 +8,7 @@ class S1C1 extends Component {
   render(){
 
     return (
-      <div>
+      <div className="challenges">
         <h1>Convert <code>hex</code> to <code>base64</code></h1>
         <S1C1Challenge />
         <S1C1Solution />

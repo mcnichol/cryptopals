@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './component/home'
+import Footer from './component/footer'
 import S1C1 from './component/s1c1'
 import S1C2 from './component/s1c2'
 import './App.css';
@@ -16,6 +17,7 @@ class App extends Component {
               <Route path="/s1c2" component={S1C2} />
             </div>
           </Router>	
+          <Footer />
       </div>
     );
   }

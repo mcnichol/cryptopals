@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './home.css';
 
 class Home extends Component {
   render(){
     return (
-      <div>
+      <div className="challenges">
         <h2>Challenge Set 1: The Basics</h2>
         <ol>
           <li><Link to="/s1c1">Convert Hex to Base64</Link></li>
