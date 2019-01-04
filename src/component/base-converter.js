@@ -78,7 +78,7 @@ class BaseConverter extends Component {
   render(){
     return(
       <div>
-        <table>
+        <table className="base-converter">
           <thead>
             <tr>
               <td colSpan="2">Convert From</td>

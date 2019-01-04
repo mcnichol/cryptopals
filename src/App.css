@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: #555555;
 }
 
@@ -8,3 +8,6 @@ body {
   padding: .5em 5em .5em 6em;
 }
 
+.binary-view {
+  table-layout: fixed;
+}

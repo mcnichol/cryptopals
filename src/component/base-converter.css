@@ -1,37 +1,38 @@
-table thead {
+table.base-converter thead {
   font-size: 1.5em;
 }
 
-table{
-  table-layout: auto;
-}
-table tbody td {
+table.base-converter tbody td {
   width: 10em;
   text-align: center;
   vertical-align: middle;
   word-break: break-word;
 }
 
-table tbody td div {
+table.base-converter tbody td div {
   font-size: 1.25em;
   word-break: break-word;
 }
 
-table tbody td input{
+table.base-converter tbody td input{
   width: 10em;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size: 1.25em;
 }
 
-table tbody td p{
+table.base-converter tbody td p{
   padding: .25em;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-table tbody td p:hover{
+table.base-converter tbody td p:hover{
   cursor: pointer; 
+}
+
+table.base-converter tbody td p:not(.is-active):hover{
+  background-color: #eeeeee;
 }
 
 table tbody td .is-active {
