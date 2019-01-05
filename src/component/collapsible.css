@@ -15,6 +15,10 @@
   text-transform: uppercase;
 }
 
+.panel-heading h4 {
+  margin: .5em;
+}
+
 .panel-heading:hover {
   background-color: #333333;
 }

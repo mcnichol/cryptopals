@@ -7,7 +7,7 @@ class Collapsible extends Component {
     super(props);
 
     this.state = {
-      isExpanded: false
+      isExpanded: true
     }
   }
 
@@ -28,7 +28,7 @@ class Collapsible extends Component {
       <div>
         <div className="panel" >
           <div className="panel-heading" onClick={(e)=>this.handleToggle(e)}>
-            <h3 id={linkId}>{title}</h3>
+            <h4 id={linkId}>{title}</h4>
           </div>
         </div>
 
