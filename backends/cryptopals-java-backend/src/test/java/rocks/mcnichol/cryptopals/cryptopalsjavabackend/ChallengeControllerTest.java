@@ -15,7 +15,7 @@ public class ChallengeControllerTest {
     MockMvc mockMvc;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         mockMvc = MockMvcBuilders.standaloneSetup(new ChallengeController()).build();
     }
 

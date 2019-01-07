@@ -29,12 +29,16 @@ class S1C1Note3 extends Component {
             <p>You will see a note from Beemer at the end where he never cared for the term and preferred referring to them in their bases (octects) which is now seen as the preferred term for clarity. Now with ISPs and how we differentiate selling of services with the Megabit(Mb) vs MegaByte(MB), it is permanently etched into the way we speak around transfer of information and bandwidth across networks. 8 Megabits is 1 MegaByte...sorry Bob.</p>
 
           <h4>Nibbles & Sextets</h4>
-          <p>In light of recent events in the previous section, Nibbles (sometimes spelled Nybble or Nyble to mirror it's byte relatives) have a history similar to that of the byte. Where it used to represent half of a byte regardless of base, today it is commonly in reference to 4 bits, half the quantity of the common 8-bit byte.</p>
-          <p>So who coined the term? There's an anecdote on how Professor David B. Benson used it jokingly in the late 50's at Los Alamos and another reference frim Citibank implementing their own pre-ISO 8583 standard which used NABBLES for communication. At this point, it's been unowned long enough that we can call it public domain and leave it at that.</p>
+          <p>Nibbles (sometimes spelled Nybble or Nyble to mirror it's byte relatives) have a history similar to that of the byte. Where it used to represent half a byte regardless of base, today it is commonly in reference to 4 bits, half the quantity of the ubiquitously termed 8-bit byte.</p>
+          <p>So who coined the term? There's an anecdote on how Professor David B. Benson used it jokingly in the late 50's at Los Alamos and another reference frim Citibank implementing their own pre-ISO 8583 standard which used NABBLES for communication. At this point, it's been un-owned long enough that we can call it public domain.</p>
 
-          <p>We'll wrap up with this one liner on Sextets and the gotcha we discussed earlier. They are 6 bits capable holding 2^6 (64) values, the perfect size for our base64.</p>
+          <p>We'll wrap up with this one liner on Sextets and the gotcha we discussed earlier. Sextets is an expression of 6 bits which are capable of holding 2^6 (64) values, the conveniently exact size we need for base64.</p>
 
-          <p>In order to convert hex values into base64 you will notice we cannot do this a hex value at a time. The reason is because there are 4 bits, so we are two short. So let's grab another hex value. Now we have 8 bits in series but we are 2 bits too long. Grab another hex value and we can cleanly divide our 12 bits into two sextets. What happens if the entire hex value isn't divisible by our 6 bit boundaries? We pad the space at the end with the needed number of '=' signs to make ourselves divisible by 6.</p>
+          <p>An issue arises when we want to convert these 4-bit hex "nibbles" into 6-bit base64 "sextets". You see we cannot convert a hex at a time. The reason is because there are 4 bits, so we are two short of a 6-bit sextet. So let's grab another hex value. Now we have 8 bits in series but we are 2 bits too long.</p>
+
+          <p>Just like when dealing with XML and anger, if you're not seeing the results you're looking for, just use more!</p>
+
+          <p>With a third hex value rounding us out to 12 bits we can now cleanly convert our three nibbles into two sextets.</p>
         </Collapsible>
       </div>
     );
