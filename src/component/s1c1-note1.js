@@ -130,7 +130,7 @@ class S1C1Note1 extends Component {
             Notice how Base 64 starts at A and progresses through the alphabet.  What is not shown merely due to space is it then proceeds to leverage a-z,0-9,+,/ equalling 64 representations for its values. Additionally note I showed capitalized and lowercase letters. This is because they both represent distinct values.
           </p>
           <p>
-            *Note: I never waste a moment to throw in a relevant <a href="https://xkcd.com/953/" target="_blank" rel="noopener noreferrer">XKCD</a>. Feel free to tell me on <a href="http://twitter.com/home?status=@codingtogether, I laughed till I cried: https://xkcd.com/953" target="_blank" rel="noopener noreferrer">Twitter</a> just how hilarious that was and how my sense of humor is your spirit animal. That being said (and likely not needing explanation), all of the numbers referenced above were relative to communication around the decimal system.
+            *Note: I never waste a moment to share a relevant <a href="https://xkcd.com/953/" target="_blank" rel="noopener noreferrer">XKCD</a>. Feel free to tell me on <a href="http://twitter.com/home?status=@codingtogether, I laughed till I cried: https://xkcd.com/953" target="_blank" rel="noopener noreferrer">Twitter</a> what you thought, how my sense of humor is your spirit animal, or that these puns are a crime against humanity. On a separate and more serious note (and possibly not needing explanation), all of the numbers referenced above were relative to communication around the decimal system.
           </p>
         </Collapsible>
       </div>
