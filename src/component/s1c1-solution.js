@@ -13,7 +13,8 @@ class S1C1Solution extends Component {
       base64Java: "",
       base64JS: "",
       base64Python: "",
-      language: "local-js"
+      language: "local-js",
+      iaas: ""
     }
   }
 
@@ -43,6 +44,12 @@ class S1C1Solution extends Component {
     });
   }
 
+  handleIaasToggle(iaasVal){
+    this.setState({
+      iaas: iaasVal
+    });
+  }
+
   render(){
     return (
       <div className="solution">
@@ -57,16 +64,16 @@ class S1C1Solution extends Component {
             <li id="lang-python" className={`${this.state.language === 'python' ? 'is-active' : ''}`} onClick={(()=>{this.handleLanguageToggle("python")})}>Python</li>
           </ul>
         </div>
+
         <div id="choose-iaas" className="selection">
           <h4>Select IaaS:</h4>
           <ul className="selection-container">
-            <li><div id="iaas-aws">AWS</div></li>
-            <li><div id="iaas-azure">Azure</div></li>
-            <li><div id="iaas-gcp">GCP</div></li>
-            <li><div id="iaas-vsphere">vSphere</div></li>
+            <li id="iaas-aws" className={`${(this.state.iaas === 'aws' && this.state.language !== "local-js") ? 'is-active' : ''}`} onClick={(()=>{this.handleIaasToggle("aws")})}>AWS</li>
+            <li id="iaas-azure" className={`${(this.state.iaas === 'azure' && this.state.language !== "local-js") ? 'is-active' : ''}`} onClick={(()=>{this.handleIaasToggle("azure")})}>Azure</li>
+            <li id="iaas-gcp" className={`${(this.state.iaas === 'gcp' && this.state.language !== "local-js")? 'is-active' : ''}`} onClick={(()=>{this.handleIaasToggle("gcp")})}>GCP</li>
+            <li id="iaas-vsphere" className={`${(this.state.iaas === 'vsphere' && this.state.language !== "local-js")? 'is-active' : ''}`} onClick={(()=>{this.handleIaasToggle("vsphere")})}>vSphere</li>
           </ul>
         </div>
-        <br/>
         <div>
           <p><b>Hex Input:</b><input value={this.state.hexInput} onChange={((e)=>{this.handleInput(e)})}/><button onClick={(()=>{this.localSolution(this.state.hexInput)})}>Submit</button></p>
         </div>

@@ -89,3 +89,44 @@
   background-color: #2D6093;
   color: #FED64A;
 }
+
+#iaas-aws:active {
+  background-color: #DD6705;
+  color: #FFFFFF;
+}
+
+#iaas-aws.is-active {
+  background-color: #FD8705;
+  color: #FFFFFF;
+}
+
+#iaas-azure:active {
+  background-color: #0C61C9;
+  color: white;
+}
+
+#iaas-azure.is-active {
+  background-color: #0C31A9;
+  color: white;
+}
+
+#iaas-gcp:active {
+  background-color: #DA2B29;
+  color: #FFFFFF;
+}
+
+#iaas-gcp.is-active {
+  background-color: #DA2B29;
+  color: #FFFFFF;
+}
+
+#iaas-vsphere:active {
+
+  background-color: #51952B;
+  color: #626565;
+}
+
+#iaas-vsphere.is-active {
+  background-color: #51952B;
+  color: #F2F5F5;
+}
