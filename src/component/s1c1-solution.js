@@ -8,11 +8,7 @@ class S1C1Solution extends Component {
 
     this.state = {
       hexInput: "",
-      base64LocalJS: "",
-      base64Go: "",
-      base64Java: "",
-      base64JS: "",
-      base64Python: "",
+      base64Output: "",
       language: "local-js",
       iaas: ""
     }
@@ -26,7 +22,7 @@ class S1C1Solution extends Component {
     }
 
     this.setState({
-      base64LocalJS: base64EncodedVal
+      base64Output: base64EncodedVal
     });
   }
 
@@ -74,16 +70,21 @@ class S1C1Solution extends Component {
             <li id="iaas-vsphere" className={`${(this.state.iaas === 'vsphere' && this.state.language !== "local-js")? 'is-active' : ''}`} onClick={(()=>{this.handleIaasToggle("vsphere")})}>vSphere</li>
           </ul>
         </div>
-        <div>
-          <p><b>Hex Input:</b><input value={this.state.hexInput} onChange={((e)=>{this.handleInput(e)})}/><button onClick={(()=>{this.localSolution(this.state.hexInput)})}>Submit</button></p>
-        </div>
-        <div>
-          <b>base64 Output:</b>
-          <div id="base64-local-js"><code>{this.state.base64LocalJS}</code></div>
-          <div id="base64-go"><code>{this.state.base64Go}</code></div>
-          <div id="base64-java"><code>{this.state.base64Java}</code></div>
-          <div id="base64-js"><code>{this.state.base64JS}</code></div>
-          <div id="base64-python"><code>{this.state.bas64Python}</code></div>
+        <div id="answer-form">
+          <div className="input-wrap">
+            <label htmlFor="input" className="input">
+              <input type="text" id="input" placeholder="&nbsp;" value={this.state.hexInput} onChange={((e)=>{this.handleInput(e)})} />
+              <span className="label">Enter Hex:</span>
+              <span className="border"></span>
+            </label>
+          <div>
+            <button onClick={(()=>{this.localSolution(this.state.hexInput)})}>Submit</button>
+          </div>
+          <div>
+            {this.state.base64Output}
+          </div>
+
+      </div>
         </div>
       </div>
     );
