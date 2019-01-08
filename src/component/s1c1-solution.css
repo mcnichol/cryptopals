@@ -1,0 +1,91 @@
+.selection {
+  display: flex;
+  flex-direction: row;
+}
+
+.selection-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  flex-grow: 4;
+}
+
+.selection-container li {
+  background-color: deepskyblue;
+  flex-grow: 1;
+  text-align: center;
+  align-self: center;
+  margin: 0 .5em;
+  background-color: #eeeeee;
+  color: #444444;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: .25em;
+  box-shadow: 0 .25em .25em #cccccc;
+}
+
+.selection-container li:hover {
+  cursor: pointer;
+}
+
+.selection-container li:active {
+  box-shadow: none;
+
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+#lang-local-js:active{
+  background-color: #F06D26;
+  color: white;
+}
+
+#lang-local-js.is-active {
+  background-color: #F58B28;
+  color: white;
+}
+
+#lang-go:active{
+  background-color: #95C0EE;
+  color: white;
+}
+
+#lang-go.is-active {
+  background-color: #1869DB;
+  color: white;
+}
+
+#lang-java:active{
+  background-color: #DF0016;
+  color: white;
+}
+
+#lang-java.is-active {
+  background-color: #BF001E;
+  color: white;
+}
+
+#lang-js:active{
+  background-color: #36382E;
+  color: white;
+}
+
+#lang-js.is-active {
+  background-color: #80BC31;
+  color: white;
+}
+
+#lang-python:active{
+  background-color: #171E26;
+  color: #FED64A;
+}
+
+#lang-python.is-active {
+  background-color: #2D6093;
+  color: #FED64A;
+}
